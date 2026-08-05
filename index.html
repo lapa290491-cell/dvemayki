@@ -9,52 +9,108 @@
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: {
-                        brand: '#ff2d78',
-                    }
+                    colors: { brand: '#ff2d78' }
                 }
             }
         }
     </script>
+    <style>
+        /* Плавная прокрутка */
+        html { scroll-behavior: smooth; }
+        /* Темная полупрозрачная маска поверх картинок для читаемости текста */
+        .bg-overlay { background-color: rgba(0, 0, 0, 0.65); }
+    </style>
 </head>
-<body class="bg-black text-white font-sans selection:bg-brand selection:text-white">
+<body class="text-white font-sans selection:bg-brand selection:text-white bg-black">
 
-    <!-- 1. ПРИЁМ ЗАКАЗА (Hero) -->
-    <section class="min-h-screen flex flex-col justify-center items-center text-center px-4 border-b border-gray-800">
-        <h1 class="text-4xl md:text-6xl font-bold mb-6">11 лет делаем то, что <br/><span class="text-brand">дарит эмоции</span></h1>
-        <p class="text-lg md:text-xl text-gray-400 max-w-2xl mb-8">Печать на одежде, корпоративный мерч и сувенирная продукция в Иркутске. Бесплатный макет и быстрая реакция.</p>
-        <div class="flex gap-4">
-            <a href="https://wa.me/79086615900" class="bg-brand hover:bg-pink-600 text-white font-bold py-3 px-8 rounded-full transition-colors">Написать в WhatsApp</a>
+    <!-- 1. ПРИЁМ ЗАКАЗА (Офис) -->
+    <section class="relative min-h-screen flex flex-col justify-center items-center text-center px-4 bg-cover bg-center" style="background-image: url('bg1.jpg');">
+        <!-- Затемнение -->
+        <div class="absolute inset-0 bg-overlay"></div>
+        
+        <!-- Контент -->
+        <div class="relative z-10 w-full max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">11 лет делаем то, что <br/><span class="text-brand">дарит эмоции</span></h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto">Печать на одежде, корпоративный мерч и сувенирная продукция. Бесплатный макет и быстрая реакция.</p>
+            <a href="https://wa.me/79086615900" class="inline-block bg-brand hover:bg-pink-600 text-white font-bold py-4 px-10 rounded-full transition-colors text-lg">Написать в WhatsApp</a>
+        </div>
+        
+        <!-- Подсказка для скролла -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce opacity-70">
+            <svg class="w-8 h-8 mx-auto text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
         </div>
     </section>
 
     <!-- 2. СКЛАД / ЗАГОТОВКИ -->
-    <section class="py-20 px-4 max-w-6xl mx-auto border-b border-gray-800">
-        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Печатаем почти на всём</h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div class="p-6 bg-gray-900 rounded-2xl">Футболки и Худи</div>
-            <div class="p-6 bg-gray-900 rounded-2xl">Кружки и Бутылки</div>
-            <div class="p-6 bg-gray-900 rounded-2xl">Шопперы</div>
-            <div class="p-6 bg-gray-900 rounded-2xl">Ежедневники</div>
+    <section class="relative min-h-screen flex flex-col justify-center items-center px-4 bg-cover bg-center" style="background-image: url('bg2.jpg');">
+        <div class="absolute inset-0 bg-overlay"></div>
+        <div class="relative z-10 w-full max-w-5xl mx-auto text-center">
+            <h2 class="text-3xl md:text-5xl font-bold mb-10">Печатаем почти на всём</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="p-6 bg-black/40 backdrop-blur-md border border-brand/30 rounded-2xl">
+                    <h3 class="font-bold text-xl mb-2">Одежда</h3>
+                    <p class="text-gray-300 text-sm">Футболки, худи, кепки, любые цвета</p>
+                </div>
+                <div class="p-6 bg-black/40 backdrop-blur-md border border-brand/30 rounded-2xl">
+                    <h3 class="font-bold text-xl mb-2">Сувениры</h3>
+                    <p class="text-gray-300 text-sm">Кружки, бутылки, шейкеры</p>
+                </div>
+                <div class="p-6 bg-black/40 backdrop-blur-md border border-brand/30 rounded-2xl">
+                    <h3 class="font-bold text-xl mb-2">Спецодежда</h3>
+                    <p class="text-gray-300 text-sm">Нанесение логотипов компании</p>
+                </div>
+                <div class="p-6 bg-black/40 backdrop-blur-md border border-brand/30 rounded-2xl">
+                    <h3 class="font-bold text-xl mb-2">Полиграфия</h3>
+                    <p class="text-gray-300 text-sm">Ежедневники и блокноты</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- 3. ЦЕХ ПЕЧАТИ -->
-    <section class="py-20 px-4 max-w-6xl mx-auto border-b border-gray-800">
-        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Несколько технологий — <span class="text-brand">один результат</span></h2>
-        <div class="space-y-6 text-gray-300 text-lg max-w-3xl mx-auto">
-            <p><strong>DTF и Термотрансфер:</strong> Яркие принты любой сложности на текстиле.</p>
-            <p><strong>УФ-печать:</strong> Стойкое нанесение на твердые поверхности (чехлы, ручки, повербанки).</p>
-            <p><strong>Вышивка:</strong> Премиальное брендирование корпоративной одежды.</p>
+    <section class="relative min-h-screen flex flex-col justify-center items-center px-4 bg-cover bg-center" style="background-image: url('bg3.jpg');">
+        <div class="absolute inset-0 bg-overlay"></div>
+        <div class="relative z-10 w-full max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-5xl font-bold mb-10">Несколько технологий — <br/><span class="text-brand">один результат</span></h2>
+            <div class="space-y-6 text-left max-w-2xl mx-auto bg-black/40 backdrop-blur-md border border-brand/30 p-6 md:p-10 rounded-3xl">
+                <div class="flex items-start gap-4">
+                    <div class="text-brand text-2xl">●</div>
+                    <div>
+                        <h4 class="text-xl font-bold">DTF и Термотрансфер</h4>
+                        <p class="text-gray-300">Яркие принты любой сложности на текстиле.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="text-brand text-2xl">●</div>
+                    <div>
+                        <h4 class="text-xl font-bold">УФ-печать</h4>
+                        <p class="text-gray-300">Стойкое нанесение на чехлы, ручки, повербанки.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="text-brand text-2xl">●</div>
+                    <div>
+                        <h4 class="text-xl font-bold">Вышивка</h4>
+                        <p class="text-gray-300">Премиальное брендирование корпоративной одежды.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- 4. УПАКОВКА И ВЫДАЧА (Footer / CTA) -->
-    <section class="py-20 px-4 flex flex-col justify-center items-center text-center">
-        <h2 class="text-3xl md:text-4xl font-bold mb-6">Готово к выдаче</h2>
-        <p class="text-xl text-gray-400 mb-8">Свяжитесь с нами, чтобы запустить ваш заказ в работу.</p>
-        <p class="text-2xl font-bold mb-6">+7 908 661-59-00</p>
-        <a href="https://t.me/79086615900" class="border border-brand text-brand hover:bg-brand hover:text-white font-bold py-3 px-8 rounded-full transition-colors">Написать в Telegram</a>
+    <!-- 4. УПАКОВКА И ВЫДАЧА -->
+    <section class="relative min-h-screen flex flex-col justify-center items-center text-center px-4 bg-cover bg-center" style="background-image: url('bg4.jpg');">
+        <div class="absolute inset-0 bg-overlay"></div>
+        <div class="relative z-10 w-full max-w-3xl mx-auto bg-black/50 backdrop-blur-md p-8 md:p-14 rounded-3xl border border-brand/50">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">Готово к выдаче</h2>
+            <p class="text-xl text-gray-300 mb-10">Свяжитесь с нами, чтобы запустить ваш заказ в работу. Делаем быстро и качественно.</p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-8">
+                <a href="https://wa.me/79086615900" class="w-full sm:w-auto bg-brand hover:bg-pink-600 text-white font-bold py-4 px-10 rounded-full transition-colors text-lg">WhatsApp</a>
+                <a href="https://t.me/79086615900" class="w-full sm:w-auto border-2 border-brand text-white hover:bg-brand font-bold py-4 px-10 rounded-full transition-colors text-lg">Telegram</a>
+            </div>
+            <p class="text-2xl font-bold">+7 908 661-59-00</p>
+            <p class="text-sm text-gray-400 mt-2">г. Иркутск</p>
+        </div>
     </section>
 
 </body>
