@@ -1,260 +1,61 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Печать на футболках и сувенирах Иркутск — ДвеМайки</title>
-  <meta name="description" content="Печать на футболках, худи, кепках, кружках, ежедневниках и корпоративных сувенирах в Иркутске. С 2013 года. Срок 1 день. Печать не отклеится.">
-  <meta name="keywords" content="печать на футболках Иркутск, корпоративные сувениры, печать на худи, кепки с логотипом, ежедневники с логотипом, спецодежда с нанесением">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://lapa290491-cell.github.io/dvemayki/">
-
-  <meta property="og:title" content="ДвеМайки — печать, которую не стыдно носить">
-  <meta property="og:description" content="Футболки, сувениры и корпоративный мерч в Иркутске. 1 день. Не отклеится.">
-  <meta property="og:type" content="website">
-
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "ДвеМайки",
-    "description": "Печать на футболках, худи, сувенирах и корпоративной продукции в Иркутске",
-    "url": "https://lapa290491-cell.github.io/dvemayki/",
-    "telephone": "+79086615900",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Иркутск",
-      "addressCountry": "RU"
-    },
-    "openingHours": "Mo-Su 10:00-20:00",
-    "sameAs": [
-      "https://www.instagram.com/dvemayki_irk/",
-      "https://m.vk.ru/irkutsk_2g"
-    ]
-  }
-  </script>
-
-  <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
-    .dark-bg { background: #0f172a; }
-    .accent { color: #f97316; }
-    .btn { background: #f97316; transition: all .2s; }
-    .btn:hover { background: #ea580c; transform: translateY(-1px); }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ДвеМайки | Печать на одежде и сувенирах в Иркутске</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#ff2d78',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body class="bg-white text-slate-800">
+<body class="bg-black text-white font-sans selection:bg-brand selection:text-white">
 
-  <!-- Header -->
-  <header class="dark-bg text-white sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-      <div class="font-bold text-xl tracking-tight">ДвеМайки</div>
-      <div class="flex items-center gap-4">
-        <a href="tel:+79086615900" class="hidden sm:block text-sm text-slate-300">+7 908 661-59-00</a>
-        <a href="#order" class="btn text-white text-sm font-semibold px-5 py-2 rounded-full">Заказать</a>
-      </div>
-    </div>
-  </header>
+    <!-- 1. ПРИЁМ ЗАКАЗА (Hero) -->
+    <section class="min-h-screen flex flex-col justify-center items-center text-center px-4 border-b border-gray-800">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">11 лет делаем то, что <br/><span class="text-brand">дарит эмоции</span></h1>
+        <p class="text-lg md:text-xl text-gray-400 max-w-2xl mb-8">Печать на одежде, корпоративный мерч и сувенирная продукция в Иркутске. Бесплатный макет и быстрая реакция.</p>
+        <div class="flex gap-4">
+            <a href="https://wa.me/79086615900" class="bg-brand hover:bg-pink-600 text-white font-bold py-3 px-8 rounded-full transition-colors">Написать в WhatsApp</a>
+        </div>
+    </section>
 
-  <!-- Hero -->
-  <section class="dark-bg text-white pt-20 pb-24 md:pt-28 md:pb-32 relative overflow-hidden">
-    <div class="max-w-6xl mx-auto px-4 relative z-10">
-      <div class="max-w-3xl">
-        <div class="inline-block text-sm text-orange-400 font-medium mb-6 tracking-wide">
-          Иркутск · с 2013 года
+    <!-- 2. СКЛАД / ЗАГОТОВКИ -->
+    <section class="py-20 px-4 max-w-6xl mx-auto border-b border-gray-800">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Печатаем почти на всём</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="p-6 bg-gray-900 rounded-2xl">Футболки и Худи</div>
+            <div class="p-6 bg-gray-900 rounded-2xl">Кружки и Бутылки</div>
+            <div class="p-6 bg-gray-900 rounded-2xl">Шопперы</div>
+            <div class="p-6 bg-gray-900 rounded-2xl">Ежедневники</div>
         </div>
-        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.1] mb-6">
-          Печать,<br>которую<br>не стыдно<br>носить
-        </h1>
-        <p class="text-lg md:text-xl text-slate-400 mb-10 max-w-xl leading-relaxed">
-          Футболки, худи, кепки, кружки, ежедневники и корпоративный мерч. 
-          <span class="text-white">1 день. Не отклеится.</span>
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4">
-          <a href="https://wa.me/79086615900?text=Здравствуйте! Хочу заказать" 
-             class="btn text-white px-8 py-4 rounded-full font-semibold text-lg text-center">
-            Написать в WhatsApp
-          </a>
-          <a href="tel:+79086615900" 
-             class="border border-white/20 hover:bg-white/10 text-white px-8 py-4 rounded-full font-semibold text-lg text-center transition">
-            Позвонить
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Цифры -->
-  <section class="py-14 bg-slate-50 border-b border-slate-100">
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="grid grid-cols-3 gap-6 text-center">
-        <div>
-          <div class="text-3xl md:text-4xl font-bold accent">1 день</div>
-          <div class="text-sm text-slate-500 mt-1">срок</div>
+    <!-- 3. ЦЕХ ПЕЧАТИ -->
+    <section class="py-20 px-4 max-w-6xl mx-auto border-b border-gray-800">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Несколько технологий — <span class="text-brand">один результат</span></h2>
+        <div class="space-y-6 text-gray-300 text-lg max-w-3xl mx-auto">
+            <p><strong>DTF и Термотрансфер:</strong> Яркие принты любой сложности на текстиле.</p>
+            <p><strong>УФ-печать:</strong> Стойкое нанесение на твердые поверхности (чехлы, ручки, повербанки).</p>
+            <p><strong>Вышивка:</strong> Премиальное брендирование корпоративной одежды.</p>
         </div>
-        <div>
-          <div class="text-3xl md:text-4xl font-bold accent">11 лет</div>
-          <div class="text-sm text-slate-500 mt-1">опыта</div>
-        </div>
-        <div>
-          <div class="text-3xl md:text-4xl font-bold accent">0</div>
-          <div class="text-sm text-slate-500 mt-1">отклеится</div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Категории -->
-  <section class="py-20">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold mb-4">Что печатаем</h2>
-      <p class="text-slate-500 mb-12 max-w-xl">От личных подарков до полноценного корпоративного мерча</p>
-
-      <div class="grid md:grid-cols-2 gap-5">
-
-        <!-- Одежда -->
-        <div class="group p-8 rounded-3xl bg-slate-50 hover:bg-slate-100 transition border border-slate-100">
-          <div class="text-sm font-semibold accent mb-3">ОДЕЖДА</div>
-          <h3 class="text-2xl font-bold mb-4">Футболки, худи, кепки</h3>
-          <p class="text-slate-600 leading-relaxed mb-6">
-            Именные, с фото, логотипами и надписями. 
-            От 1 штуки. Любые размеры и тиражи.
-          </p>
-          <div class="flex flex-wrap gap-2 text-sm">
-            <span class="bg-white px-3 py-1 rounded-full border">Футболки</span>
-            <span class="bg-white px-3 py-1 rounded-full border">Худи</span>
-            <span class="bg-white px-3 py-1 rounded-full border">Кепки</span>
-            <span class="bg-white px-3 py-1 rounded-full border">Свитшоты</span>
-          </div>
-        </div>
-
-        <!-- Корпоратив -->
-        <div class="group p-8 rounded-3xl bg-slate-900 text-white">
-          <div class="text-sm font-semibold text-orange-400 mb-3">КОРПОРАТИВ</div>
-          <h3 class="text-2xl font-bold mb-4">Сувениры и мерч</h3>
-          <p class="text-slate-300 leading-relaxed mb-6">
-            Ежедневники, кружки, повербанки, шопперы, 
-            наборы и спецодежда с вашим логотипом.
-          </p>
-          <div class="flex flex-wrap gap-2 text-sm">
-            <span class="bg-white/10 px-3 py-1 rounded-full">Ежедневники</span>
-            <span class="bg-white/10 px-3 py-1 rounded-full">Кружки</span>
-            <span class="bg-white/10 px-3 py-1 rounded-full">Повербанки</span>
-            <span class="bg-white/10 px-3 py-1 rounded-full">Спецодежда</span>
-          </div>
-        </div>
-
-        <!-- Подарки -->
-        <div class="p-8 rounded-3xl bg-orange-50 border border-orange-100">
-          <div class="text-sm font-semibold accent mb-3">ПОДАРКИ</div>
-          <h3 class="text-2xl font-bold mb-3">С эмоцией</h3>
-          <p class="text-slate-600 leading-relaxed">
-            Именные вещи, парные футболки, 
-            подарки на день рождения и праздники. 
-            Делаем так, чтобы было приятно дарить.
-          </p>
-        </div>
-
-        <!-- Срочно -->
-        <div class="p-8 rounded-3xl bg-white border border-slate-200">
-          <div class="text-sm font-semibold accent mb-3">СРОЧНО</div>
-          <h3 class="text-2xl font-bold mb-3">Нужно вчера</h3>
-          <p class="text-slate-600 leading-relaxed">
-            Большинство заказов делаем за 1 день. 
-            Срочность обсуждаем — найдём решение.
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Как заказать -->
-  <section id="order" class="py-20 bg-slate-50">
-    <div class="max-w-3xl mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-14">Как сделать заказ</h2>
-
-      <div class="space-y-10 mb-14">
-        <div class="flex gap-6">
-          <div class="w-12 h-12 rounded-2xl bg-orange-500 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
-          <div>
-            <h3 class="font-bold text-xl mb-1">Напишите</h3>
-            <p class="text-slate-600">WhatsApp, Telegram или Max. Пришлите идею, фото или логотип.</p>
-          </div>
-        </div>
-        <div class="flex gap-6">
-          <div class="w-12 h-12 rounded-2xl bg-orange-500 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
-          <div>
-            <h3 class="font-bold text-xl mb-1">Согласуем макет</h3>
-            <p class="text-slate-600">Делаем бесплатный макет и показываем до печати.</p>
-          </div>
-        </div>
-        <div class="flex gap-6">
-          <div class="w-12 h-12 rounded-2xl bg-orange-500 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
-          <div>
-            <h3 class="font-bold text-xl mb-1">Печатаем</h3>
-            <p class="text-slate-600">Обычно готово за 1 день. Самовывоз или доставка по Иркутску.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="dark-bg rounded-3xl p-8 md:p-10 text-center text-white">
-        <p class="text-xl md:text-2xl font-medium mb-8">Напишите прямо сейчас</p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="https://wa.me/79086615900?text=Здравствуйте! Хочу заказать" 
-             class="btn text-white px-8 py-4 rounded-full font-semibold text-lg">
-            WhatsApp
-          </a>
-          <a href="tel:+79086615900" 
-             class="bg-white text-slate-900 hover:bg-slate-100 px-8 py-4 rounded-full font-semibold text-lg transition">
-            +7 908 661-59-00
-          </a>
-        </div>
-        <p class="text-sm text-slate-400 mt-6">Telegram и Max — этот же номер</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="py-20">
-    <div class="max-w-3xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-12">Частые вопросы</h2>
-      <div class="space-y-4">
-        <div class="p-6 rounded-2xl bg-slate-50">
-          <h3 class="font-bold text-lg">Можно заказать 1 штуку?</h3>
-          <p class="text-slate-600 mt-2">Да. Делаем как единичные заказы, так и большие тиражи.</p>
-        </div>
-        <div class="p-6 rounded-2xl bg-slate-50">
-          <h3 class="font-bold text-lg">Печать не отклеится?</h3>
-          <p class="text-slate-600 mt-2">Да. Используем качественные материалы и даём гарантию на нанесение.</p>
-        </div>
-        <div class="p-6 rounded-2xl bg-slate-50">
-          <h3 class="font-bold text-lg">Делаете корпоративные заказы?</h3>
-          <p class="text-slate-600 mt-2">Да. Логотипы, мерч, подарки сотрудникам, спецодежда — всё под ключ.</p>
-        </div>
-        <div class="p-6 rounded-2xl bg-slate-50">
-          <h3 class="font-bold text-lg">Сколько ждать?</h3>
-          <p class="text-slate-600 mt-2">Большинство заказов — 1 день. Срочные обсуждаем отдельно.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="dark-bg text-white py-14">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-      <div class="font-bold text-2xl mb-3">ДвеМайки</div>
-      <p class="text-slate-400 mb-8">Печать на футболках и сувенирах в Иркутске с 2013 года</p>
-      <div class="flex flex-wrap justify-center gap-8 text-sm mb-10">
-        <a href="https://www.instagram.com/dvemayki_irk/" class="hover:text-orange-400 transition">Instagram</a>
-        <a href="https://m.vk.ru/irkutsk_2g" class="hover:text-orange-400 transition">ВКонтакте</a>
-        <a href="https://wa.me/79086615900" class="hover:text-orange-400 transition">WhatsApp</a>
-        <a href="tel:+79086615900" class="hover:text-orange-400 transition">+7 908 661-59-00</a>
-      </div>
-      <p class="text-xs text-slate-500">© 2013–2026 ДвеМайки · Иркутск</p>
-    </div>
-  </footer>
+    <!-- 4. УПАКОВКА И ВЫДАЧА (Footer / CTA) -->
+    <section class="py-20 px-4 flex flex-col justify-center items-center text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Готово к выдаче</h2>
+        <p class="text-xl text-gray-400 mb-8">Свяжитесь с нами, чтобы запустить ваш заказ в работу.</p>
+        <p class="text-2xl font-bold mb-6">+7 908 661-59-00</p>
+        <a href="https://t.me/79086615900" class="border border-brand text-brand hover:bg-brand hover:text-white font-bold py-3 px-8 rounded-full transition-colors">Написать в Telegram</a>
+    </section>
 
 </body>
 </html>
